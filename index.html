@@ -12,6 +12,8 @@
       .navbar{display: flex; flex-direction: row; justify-content: space-between; align-items: center;}
       .main-content {display: flex; flex-direction: row; justify-content: flex-start;}
       .booking-form-column {display:flex; flex-direction: column;}
+      .search-list {display: flex; flex-direction: column; justify-content: flex-start; align-items: stretch; flex-grow: 1;}
+      .list-hotel {display: flex; flex-direction: row; justify-content: space-between;}
 
   </style>
   
@@ -41,20 +43,34 @@
                       <input type="date" id="end" name="trip-end" value="2020-03-29" min="2020-03-29" max="2020-12-31">
                       
                     <select>
-                        <option value="one-adult">1 adult</option>
-                        <option value="two-adults">2 adults</option>
-                        <option value="three-adults">3 adults</option>
-                        <option value="five-adults">4 adults</option>
+                        <option value="one-adult">1 Adult</option>
+                        <option value="two-adults">2 Adults</option>
+                        <option value="three-adults">3 Adults</option>
+                        <option value="four-adults">4 Adults</option>
+                      </select>
+
+                      <div class="child-room-row">
+
+                      <select>
+                        <option value="no-child">No Child</option>
+                        <option value="one-child">1 Child</option>
+                        <option value="two-children">2 Children</option>
+                        <option value="three-children">3 Children</option>
+                        <option value="four-children">4 Children</option>
                       </select>
 
                       <select>
-                        <option value="one-adult">1 adult</option>
-                        <option value="two-adults">2 adults</option>
-                        <option value="three-adults">3 adults</option>
-                        <option value="five-adults">4 adults</option>
+                        <option value="one-room">1 Room</option>
+                        <option value="two-rooms">2 Rooms</option>
+                        <option value="three-rooms">3 Rooms</option>
+                        <option value="four-rooms">4 Rooms</option>
                       </select>
-                      
-
+                    </div>
+                    <label>
+                        <input type="checkbox" name="signup" value="yes">
+                        Job Travel?
+                      </label> 
+                      <input id="search-botton" type="submit" value="Search">
 
                 </form>
                 
@@ -63,12 +79,48 @@
             <div class="filter-form"></div>
         </div>
         <div class="search-list">
+
             <div class="show-order"></div>
-            <div class="hotel-list"></div>
+            <div class="hotel-list">
+                <div class="list-hotel barcelona">
+                    <div class="list-hotel-description">
+                        <h3>Migracode Hotel Barcelona</h3>
+                        <p>Description Migracode Hotel Barcelona</p>
+                    </div>
+                    <input id="reserve-botton" type="submit" value="Reserve">
+                </div>
+                <div class="list-hotel tokio">
+                    <div class="list-hotel-description">
+                        <h3>Migracode Hotel Tokio</h3>
+                        <p>Description Migracode Hotel Tokio</p>
+                    </div>
+                    <input id="reserve-botton" type="submit" value="Reserve">
+                </div>
+                <div class="list-hotel new-york">
+                    <div class="list-hotel-description">
+                        <h3>Migracode Hotel New York</h3>
+                        <p>Description Migracode Hotel New York</p>
+                    </div>
+                    <input id="reserve-botton" type="submit" value="Reserve">
+                </div>
+                
+                <div class="list-hotel abu-dhabi">
+                    <div class="list-hotel-description">
+                    <h3>Migracode Hotel Abu Dhabi</h3>
+                    <p>Description Migracode Hotel Abu Dhabi</p>
+                </div>
+                    <input id="reserve-botton" type="submit" value="Reserve">
+                    
+
+                </div>
+                
+
+            </div>
+            
         </div>
 
     </div>
-    <footer></footer>
+    <footer>FOOTER</footer>
 </div>
 
 
