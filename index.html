@@ -1,50 +1,80 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
     <title>Migracode Hotel</title>
   </head>
+
+  <style>
+
+      * {border: dotted 1px blue;}
+
+      .navbar{display: flex; flex-direction: row; justify-content: space-between; align-items: center;}
+      .main-content {display: flex; flex-direction: row; justify-content: flex-start;}
+      .booking-form-column {display:flex; flex-direction: column;}
+
+  </style>
+  
   <body>
-    
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">Migracode Hotel</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+<div class="site-wrapper">
+    <nav class="navbar">
+        <p>Migracode Hotel</p>
+        <a href="index.html">home</a>
+        <label for="search">Search</label>
+        <input id="search" type="search" name="search">
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">About</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Contact</a>
-      </li>
+    </nav>
+    <div class="main-content">
+        <div class="booking-filter-forms">
+            <div class="booking-form">
+                <form class="booking-form-column" method="GET" action="">
+                    <label for="destination">Destination</label>
+                    <select id="destination" >
+                        <option value="barcelona">Barcelona</option>
+                        <option value="new-york">New York</option>
+                        <option value="tokio">Tokio</option>
+                        <option value="abu-dhabi">Abu Dhabi</option>
+                      </select>
+                      <label for="start">Start date:</label>
+                      <input type="date" id="start" name="trip-start" value="2020-03-28" min="2020-03-28" max="2020-12-31">
+                      <label for="end">End date:</label>
+                      <input type="date" id="end" name="trip-end" value="2020-03-29" min="2020-03-29" max="2020-12-31">
+                      
+                    <select>
+                        <option value="one-adult">1 adult</option>
+                        <option value="two-adults">2 adults</option>
+                        <option value="three-adults">3 adults</option>
+                        <option value="five-adults">4 adults</option>
+                      </select>
 
-     
-    </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
-  </div>
-</nav>
+                      <select>
+                        <option value="one-adult">1 adult</option>
+                        <option value="two-adults">2 adults</option>
+                        <option value="three-adults">3 adults</option>
+                        <option value="five-adults">4 adults</option>
+                      </select>
+                      
 
 
+                </form>
+                
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+            </div>
+            <div class="filter-form"></div>
+        </div>
+        <div class="search-list">
+            <div class="show-order"></div>
+            <div class="hotel-list"></div>
+        </div>
+
+    </div>
+    <footer></footer>
+</div>
+
+
   </body>
+ 
+
+
+   
 </html>
