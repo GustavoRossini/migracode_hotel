@@ -9,11 +9,29 @@
 
       * {border: dotted 1px blue;}
 
+     
+ 
+
+
+
+      .site-wrapper{max-width: 1500px; display: flex; flex-direction: column; justify-content: space-around;}
       .navbar{display: flex; flex-direction: row; justify-content: space-between; align-items: center;}
-      .main-content {display: flex; flex-direction: row; justify-content: flex-start;}
-      .booking-form-column {display:flex; flex-direction: column;}
+      .main-content {display: flex; flex-direction: row; justify-content: flex-start; flex-wrap: wrap;}
+      .booking-form-column {display:flex; flex-direction: column; width: 35vw; }
       .search-list {display: flex; flex-direction: column; justify-content: flex-start; align-items: stretch; flex-grow: 1;}
       .list-hotel {display: flex; flex-direction: row; justify-content: space-between;}
+      .child-room-row {display: flex; flex-direction: row; align-items: stretch;}
+      .child-room-select {width: 50%;}
+
+     @media screen and (max-width: 678px)
+
+     {.booking-filter-forms {width: 100%;}
+     .booking-form-column {width: 100%;}}
+         
+        
+     
+
+   
 
   </style>
   
@@ -51,7 +69,7 @@
 
                       <div class="child-room-row">
 
-                      <select>
+                      <select class="child-room-select">
                         <option value="no-child">No Child</option>
                         <option value="one-child">1 Child</option>
                         <option value="two-children">2 Children</option>
@@ -59,7 +77,7 @@
                         <option value="four-children">4 Children</option>
                       </select>
 
-                      <select>
+                      <select class="child-room-select"> 
                         <option value="one-room">1 Room</option>
                         <option value="two-rooms">2 Rooms</option>
                         <option value="three-rooms">3 Rooms</option>
@@ -120,7 +138,7 @@
         </div>
 
     </div>
-    <footer>FOOTER</footer>
+    <footer></footer>
 </div>
 
 
