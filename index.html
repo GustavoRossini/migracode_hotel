@@ -7,22 +7,25 @@
 
   <style>
 
-      * {border: dotted 1px blue;}
+      *{border: dotted 1px blue;}
 
      
  
 
 
 
-      .site-wrapper{max-width: 1500px; display: flex; flex-direction: column; justify-content: space-around;}
+      .site-wrapper{ display: flex; flex-direction: column; justify-content: space-around;max-width: 1500px;margin: auto;}
       .navbar{display: flex; flex-direction: row; justify-content: space-between; align-items: center;}
+      .nav-home{display: flex; flex-direction: row;justify-content: space-between; align-items: center;}
       .main-content {display: flex; flex-direction: row; justify-content: flex-start; flex-wrap: wrap;}
-      .booking-form-column {display:flex; flex-direction: column; width: 35vw; }
+      .booking-filter-forms {width: 35%;}
+      .booking-form-column {display:flex; flex-direction: column; width: 100%; }
       .search-list {display: flex; flex-direction: column; justify-content: flex-start; align-items: stretch; flex-grow: 1;}
       .list-hotel {display: flex; flex-direction: row; justify-content: space-between;}
       .child-room-row {display: flex; flex-direction: row; align-items: stretch;}
       .child-room-select {width: 50%;}
-
+      #nav-logo {margin-right: 5px;}
+     
      @media screen and (max-width: 678px)
 
      {.booking-filter-forms {width: 100%;}
@@ -36,13 +39,17 @@
   </style>
   
   <body>
+    
 <div class="site-wrapper">
     <nav class="navbar">
-        <p>Migracode Hotel</p>
+        <div class="nav-home">
+        <p id="nav-logo">Migracode Hotel</p>
         <a href="index.html">home</a>
+    </div>
+        <div class="nav-search">
         <label for="search">Search</label>
         <input id="search" type="search" name="search">
-
+    </div>
     </nav>
     <div class="main-content">
         <div class="booking-filter-forms">
@@ -140,6 +147,7 @@
     </div>
     <footer></footer>
 </div>
+
 
 
   </body>
