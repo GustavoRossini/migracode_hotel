@@ -14,7 +14,7 @@
 
 
 
-      .site-wrapper{ display: flex; flex-direction: column; justify-content: space-around;max-width: 1500px;margin: auto;}
+      .site-wrapper{ display: flex; flex-direction: column; justify-content: space-around; max-width: 1500px; margin: auto;}
       .navbar{display: flex; flex-direction: row; justify-content: space-between; align-items: center;}
       .nav-home{display: flex; flex-direction: row;justify-content: space-between; align-items: center;}
       .main-content {display: flex; flex-direction: row; justify-content: flex-start; flex-wrap: wrap;}
@@ -25,11 +25,15 @@
       .child-room-row {display: flex; flex-direction: row; align-items: stretch;}
       .child-room-select {width: 50%;}
       #nav-logo {margin-right: 5px;}
+      #nav-home {margin-right: 5px;}
+      .nav-search {display: flex; flex-wrap: nowrap;}
+
      
-     @media screen and (max-width: 678px)
+     @media screen and (max-width: 378px)
 
      {.booking-filter-forms {width: 100%;}
-     .booking-form-column {width: 100%;}}
+     .booking-form-column {width: 100%;}
+     
          
         
      
@@ -44,7 +48,7 @@
     <nav class="navbar">
         <div class="nav-home">
         <p id="nav-logo">Migracode Hotel</p>
-        <a href="index.html">home</a>
+        <a id="nav-home" href="index.html">home</a>
     </div>
         <div class="nav-search">
         <label for="search">Search</label>
