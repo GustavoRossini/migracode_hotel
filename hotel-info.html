@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Migracode Hotel</title>
+  </head>
+
+  <style>
+
+      *{border: dotted 1px blue;}
+
+     
+ 
+
+
+
+      .site-wrapper{ display: flex; flex-direction: column; justify-content: space-around; max-width: 1500px; margin: auto;}
+      .navbar{display: flex; flex-direction: row; justify-content: space-between; align-items: center;}
+      .nav-home{display: flex; flex-direction: row;justify-content: space-between; align-items: center;}
+      .main-content {display: flex; flex-direction: column; justify-content: flex-start; flex-wrap: wrap;}
+      
+      
+      .hotel-info-reserve {display: flex; flex-direction: row; justify-content: space-between;  width: 100%;}
+      .hotel-info {border: dotted 2px red; display: flex; flex-direction: row; justify-content: flex-start; align-items: center; flex-wrap: wrap;}
+      
+      .hotel-info > * {margin-right: 5px;}
+      .reserve-info > * {margin-left: 5px;}
+
+      .reserve-info {display: flex; flex-direction: row;}
+
+      .hotel-larger-description {margin: auto;}
+      .hotel-photo-clip {margin: auto;}
+
+      #nav-logo {margin-right: 5px;}
+      #nav-home {margin-right: 5px;}
+      .nav-search {display: flex; flex-wrap: nowrap;}
+
+     
+     @media screen and (max-width: 678px)
+
+     {.hotel-info-reserve {flex-wrap: wrap;}
+     .hotel-info-reserve > * {width: 100%;}
+     .reserve-info {justify-content: space-between;} }
+     
+         
+        
+     
+
+   
+
+  </style>
+  
+  <body>
+    
+<div class="site-wrapper">
+    <nav class="navbar">
+        <div class="nav-home">
+        <p id="nav-logo">Migracode Hotel</p>
+        <a id="nav-home" href="index.html">home</a>
+    </div>
+        <div class="nav-search">
+        <label for="search">Search</label>
+        <input id="search" type="search" name="search">
+    </div>
+    </nav>
+    <div class="main-content">
+               
+        <div class="hotel-info-reserve">
+                
+                <div class="hotel-info"> <h3>Migracode Hotel Barcelona</h3>
+                    <p>Info Migracode Hotel Barcelona</p></div> 
+                   
+            
+                       
+                   
+                    <div class="reserve-info">
+                    <p>Reserve Details</p>
+                    <input id="reserve-botton" type="submit" value="Reserve">
+                     </div>
+                    
+                
+        </div> 
+        
+      <div class="hotel-photo-clip"> <h3>Hotel Photo Clip</h3></div>
+      <div class="hotel-larger-description"><p>Larger description Migracode Hotel Barcelona</p></div>    
+                      
+            
+
+                
+
+          
+       
+
+    </div>
+    <footer></footer>
+
+
+
+
+  </body>
+ 
+
+
+   
+</html>
