@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Migracode Hotel</title>
+  </head>
+
+  <style>
+
+      *{border: dotted 1px blue;}
+
+     
+ 
+
+
+
+      .site-wrapper{ display: flex; flex-direction: column; justify-content: space-around; max-width: 1500px; margin: auto;}
+      .navbar{display: flex; flex-direction: row; justify-content: space-between; align-items: center;}
+      .nav-home{display: flex; flex-direction: row;justify-content: space-between; align-items: center;}
+      .main-content {display: flex; flex-direction: row; justify-content: flex-start; flex-wrap: wrap;}
+      .register-filter-forms {width: 100%;}
+      .booking-info {display: flex; flex-direction: column; justify-content: flex-start; align-items: center; width: 35%;}
+      .register-form-column {display:flex; flex-direction: column; width: 100%; }
+      .hotel-last-info {display: flex; flex-direction: column; justify-content: flex-start; align-items: stretch; flex-grow: 1;}
+      .list-hotel {display: flex; flex-direction: row; justify-content: space-between;}
+      .register-header {display: flex; flex-direction: row; justify-content: center;}
+      
+      #nav-logo {margin-right: 5px;}
+      #nav-home {margin-right: 5px;}
+      .nav-search {display: flex; flex-wrap: nowrap;}
+
+     
+     @media screen and (max-width: 678px)
+
+     {.register-filter-forms {width: 100%;}
+     .register-form-column {width: 100%;}
+     .booking-info {width: 100%;}}
+     
+         
+        
+     
+
+   
+
+  </style>
+  
+  <body>
+    
+<div class="site-wrapper">
+    <nav class="navbar">
+        <div class="nav-home">
+        <p id="nav-logo">Migracode Hotel</p>
+        <a id="nav-home" href="index.html">home</a>
+    </div>
+        <div class="nav-search">
+        <label for="search">Search</label>
+        <input id="search" type="search" name="search">
+    </div>
+    </nav>
+    <div class="main-content">
+
+    <div class="booking-info"> <h4>Booking Info</h4>
+
+    </div>
+
+        <div class="hotel-last-info">
+
+
+<div class="hotel-info">
+    <div class="list-hotel barcelona">
+    <div class="hotel-photo"><h4>Hotel Photo</h4></div>
+        <div class="list-hotel-description">
+            <h3>Migracode Hotel Barcelona</h3>
+            <p>Description Migracode Hotel Barcelona</p>
+        </div>
+        
+    </div>
+    
+
+    </div>
+    
+
+
+        <div class="register-filter-forms">
+
+            <div class="register-header"> 
+            
+            <h4>Register</h4>
+            
+            
+            </div>     
+          
+                <form class="register-form-column" method="GET" action="">
+                    
+                    
+          
+                    <label for="name">Name:</label>
+                    <input id="name" type="text" name="" required>
+                    
+                    <label for="surname">Surname:</label>
+                    <input id="surname" type="text" name="" required>
+                
+                    
+                    <label for="phone">Phone:</label>
+                    <input id="phone" type="tel" name="" required>  
+
+                    <label for="email"> Email:</label>
+                    <input type="email" id="email" required>        
+                
+                    <label>
+                        <input type="checkbox" name="signup" value="yes">
+                        Job Travel?
+                      </label> 
+                      <input id="pay-botton" type="submit" value="Pay">
+
+                </form>
+                
+
+            
+          
+            
+        </div>
+
+    
+</div>
+
+
+
+  </body>
+ 
+
+
+   
+</html>
